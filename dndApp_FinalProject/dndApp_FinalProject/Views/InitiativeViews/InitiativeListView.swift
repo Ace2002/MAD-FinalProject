@@ -10,21 +10,23 @@ import SwiftUI
 //Maybe rethink some of the names that are used. Specificly "user".
 
 struct InitiativeListView: View {
-    @State private var inititiveList = Array<String>()
+    @State private var inititiveList = [String]()
     @State private var initiativeUser: String = ""
     
     var body: some View {
         VStack {
             List{
-                ForEach(inititiveList, id: \.self) { user in
+                ForEach(inititiveList.indices, id: \.self) { user in
                     HStack {
-                        Text("\(user)")
+                        Text("\(user + 1)")
+                        Text("\(inititiveList[user])")
                         Button{
-                            
+                            inititiveList.remove(at: user)
                         }label: {
                             Text("Remove")
                         }
                             .buttonStyle(.bordered)
+                            
                     }
                 }
             }

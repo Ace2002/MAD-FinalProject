@@ -16,7 +16,7 @@
 		3182740E29ED99C100875CD4 /* InitiativeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182740D29ED99C100875CD4 /* InitiativeListView.swift */; };
 		318E223A29D65EEF00E5BD00 /* DieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E223929D65EEF00E5BD00 /* DieView.swift */; };
 		318E223C29D6627400E5BD00 /* DiceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E223B29D6627400E5BD00 /* DiceRow.swift */; };
-		31B74B5329F22A4800F084D3 /* InitiativeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B74B5229F22A4800F084D3 /* InitiativeData.swift */; };
+		31D7E7FE2A02B46600D1C842 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D7E7FD2A02B46600D1C842 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		3182740D29ED99C100875CD4 /* InitiativeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeListView.swift; sourceTree = "<group>"; };
 		318E223929D65EEF00E5BD00 /* DieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieView.swift; sourceTree = "<group>"; };
 		318E223B29D6627400E5BD00 /* DiceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRow.swift; sourceTree = "<group>"; };
-		31B74B5229F22A4800F084D3 /* InitiativeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeData.swift; sourceTree = "<group>"; };
+		31D7E7FD2A02B46600D1C842 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				3182740D29ED99C100875CD4 /* InitiativeListView.swift */,
+				31D7E7FD2A02B46600D1C842 /* Menu.swift */,
 			);
 			path = InitiativeViews;
 			sourceTree = "<group>";
@@ -112,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				313BF38629DB23BD00D3481A /* Die.swift */,
-				31B74B5229F22A4800F084D3 /* InitiativeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,12 +189,12 @@
 			files = (
 				3172A8E429D338520005C877 /* ContentView.swift in Sources */,
 				3172A8E229D338520005C877 /* dndApp_FinalProjectApp.swift in Sources */,
+				31D7E7FE2A02B46600D1C842 /* Menu.swift in Sources */,
 				318E223A29D65EEF00E5BD00 /* DieView.swift in Sources */,
 				3172A8F129D33B7B0005C877 /* DiceSelectView.swift in Sources */,
 				313BF38729DB23BD00D3481A /* Die.swift in Sources */,
 				318E223C29D6627400E5BD00 /* DiceRow.swift in Sources */,
 				3182740E29ED99C100875CD4 /* InitiativeListView.swift in Sources */,
-				31B74B5329F22A4800F084D3 /* InitiativeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

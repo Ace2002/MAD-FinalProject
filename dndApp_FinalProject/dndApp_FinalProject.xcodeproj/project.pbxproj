@@ -13,6 +13,7 @@
 		3172A8E629D338540005C877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3172A8E529D338540005C877 /* Assets.xcassets */; };
 		3172A8E929D338540005C877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3172A8E829D338540005C877 /* Preview Assets.xcassets */; };
 		3172A8F129D33B7B0005C877 /* DiceSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3172A8F029D33B7B0005C877 /* DiceSelectView.swift */; };
+		317DF4742A049BBA0029F1FA /* InitiativeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DF4732A049BBA0029F1FA /* InitiativeData.swift */; };
 		3182740E29ED99C100875CD4 /* InitiativeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182740D29ED99C100875CD4 /* InitiativeListView.swift */; };
 		318E223A29D65EEF00E5BD00 /* DieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E223929D65EEF00E5BD00 /* DieView.swift */; };
 		318E223C29D6627400E5BD00 /* DiceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E223B29D6627400E5BD00 /* DiceRow.swift */; };
@@ -27,6 +28,7 @@
 		3172A8E529D338540005C877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3172A8E829D338540005C877 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3172A8F029D33B7B0005C877 /* DiceSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceSelectView.swift; sourceTree = "<group>"; };
+		317DF4732A049BBA0029F1FA /* InitiativeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeData.swift; sourceTree = "<group>"; };
 		3182740D29ED99C100875CD4 /* InitiativeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiativeListView.swift; sourceTree = "<group>"; };
 		318E223929D65EEF00E5BD00 /* DieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DieView.swift; sourceTree = "<group>"; };
 		318E223B29D6627400E5BD00 /* DiceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRow.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				3182740D29ED99C100875CD4 /* InitiativeListView.swift */,
-				31D7E7FD2A02B46600D1C842 /* Menu.swift */,
 			);
 			path = InitiativeViews;
 			sourceTree = "<group>";
@@ -102,6 +103,7 @@
 		3172A8EF29D338630005C877 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				31D7E7FD2A02B46600D1C842 /* Menu.swift */,
 				3172A8E329D338520005C877 /* ContentView.swift */,
 				3110814529E5B4B10054457A /* InitiativeViews */,
 				3110814429E5ADF60054457A /* DiceViews */,
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				313BF38629DB23BD00D3481A /* Die.swift */,
+				317DF4732A049BBA0029F1FA /* InitiativeData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				3172A8F129D33B7B0005C877 /* DiceSelectView.swift in Sources */,
 				313BF38729DB23BD00D3481A /* Die.swift in Sources */,
 				318E223C29D6627400E5BD00 /* DiceRow.swift in Sources */,
+				317DF4742A049BBA0029F1FA /* InitiativeData.swift in Sources */,
 				3182740E29ED99C100875CD4 /* InitiativeListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

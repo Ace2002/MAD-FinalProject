@@ -25,11 +25,11 @@ struct DieView: View {
                         Text("\(die.sides)")
                     )
                     .padding()
-                    .foregroundColor(Color.red)
             }
             Text("\(die.value)")
                 .bold()
         }
+        .accentColor(.red)
     }
 }
 

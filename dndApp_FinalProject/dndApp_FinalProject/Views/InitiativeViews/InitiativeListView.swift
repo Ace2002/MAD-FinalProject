@@ -7,42 +7,43 @@
 
 import SwiftUI
 
-//Maybe rethink some of the names that are used. Specificly "user".
-
 struct InitiativeListView: View {
-    @State private var inititiveList = [String]()
+    @State var initiativeData: InitiativeData
     @State private var initiativeUser: String = ""
     
     var body: some View {
         VStack {
             List{
-                ForEach(inititiveList.indices, id: \.self) { user in
+                ForEach(initiativeData.initiativeList.indices, id: \.self) { user in
                     HStack {
                         Text("\(user + 1)")
-                        Text("\(inititiveList[user])")
+                        Text("\(initiativeData.initiativeList[user])")
                         Button{
-                            inititiveList.remove(at: user)
+                            initiativeData.initiativeList.remove(at: user)
                         }label: {
                             Text("Remove")
                         }
-                            .buttonStyle(.bordered)
-                            
+                        .buttonStyle(.bordered)
+                        .buttonBorderShape(.capsule)
                     }
                 }
             }
+            
             TextField("Enter Here", text: $initiativeUser)
                 .textFieldStyle(.roundedBorder)
                 .padding()
                 .autocorrectionDisabled()
                 .onSubmit {
-                    inititiveList.append(initiativeUser)
+                    initiativeData.initiativeList.append(initiativeUser)
                 }
+                .colorInvert()
+
         }
     }
 }
 
 struct InitiativeListView_Previews: PreviewProvider {
     static var previews: some View {
-        InitiativeListView()
+        InitiativeListView(initiativeData: InitiativeData())
     }
 }
